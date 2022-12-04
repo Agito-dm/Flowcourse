@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+	<title>Flowcourse</title>
+</head>
+
+<body id="body">
+
+	<div class="wrapper">
+		<header class="header ">
+			<div class="container">
+				<section class="header__top header__top-main">
+					<div class="header__top-left">
+						<div class="header__top-logo">
+							<img src="./images/header/logo.svg" alt="">
+						</div>
+						<div class="header__top-search">
+							<label for="search-input">
+								<img src="./images/header/search.svg" alt="">
+							</label>
+							<input id="search-input" name="search-input" class="header__search-input"
+								placeholder="Найти интересующий курс" type="text">
+						</div>
+					</div>
+					<div class="header__top-right">
+						<div class="header__top-burger burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<!--============================================ NAV ============================================-->
+
+						<div class="header__top-list">
+							<div class="header__top-li "><a href="#">Каталог</a></div>
+							<div class="header__top-li "><a href="#">Контакты</a></div>
+							<div class="header__top-li "><a href="https://flowcourse.ru/o-nas/">О нас</a></div>
+							<div class="header__top-li "><a target="_blank" href="./teacher.html">Преподавателю</a></div>
+							<div class="header__top-li "><a href="#">Избранное</a></div>
+							<div class="header__top-li "><a target="_blank" href="https://flowcourse.ru">FC</a></div>
+						</div>
+						<div class="header__top-profile main-nav">
+							<a href="#"><img src="./images/header/user-icon.svg" alt=""></a>
+						</div>
+					</div>
+				</section>
+
+				<section class="header__body">
+					<div class="header__body-wrapper">
+						<div class="header__body-content">
+							<h1 class="header__body-title"><span>Учитесь и обучайте</span> <span>с удобством</span></h1>
+							<div class="header__body-welcome">FlowCourse – образовательная платформа онлайн-курсов на любой
+								возраст</div>
+							<div class="header__body-buttons">
+								<button class="header__body-button button">Перейти в каталог</button>
+								<button class="header__body-button button header__body-button-create">Создать
+									онлайн-курс</button>
+							</div>
+						</div>
+						<div class="header__body-img">
+							<img src="./images/header/hero_header1.svg" alt="not found">
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="header__blick-1 blick">
+				<img src="./images/header/blick1.svg" alt="not found">
+			</div>
+		</header>
+
+		<!--/ ============================================Регистрация=============================================== -->
+		<!-- <div class="registration">
+			<div class="registration__wrapper">
+				<div class="registration__title">РЕГИСТРАЦИЯ</div>
+				<div class="registration__block-inputs">
+					<ul class="registration__inputs">
+						<li class="registration__input">
+							<label for="name">Имя</label>
+							<input placeholder="Имя" id="name" type="text">
+						</li>
+						<li class="registration__input">
+							<label for="number">Номер телефона</label>
+							<input placeholder="+7 (999) 000-00-00" id="number" type="tel">
+						</li>
+						<li class="registration__input">
+							<label for="password">Пароль</label>
+							<input placeholder="Пароль" id="password" type="password">
+						</li>
+					</ul>
+					<div class="registration__checkbox">
+						<input type="checkbox">
+						<label for="">Я согласен с <a href="#">условиями передачи информации</a></label>
+					</div>
+					<div class="registration__button button">
+						Зарегистрироваться
+					</div>
+					<div class="registration__entry">
+						<span>Уже есть аккаунт?</span><br>
+						<a href="#">Войти</a>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="cd-user-modal">
+			<div class="cd-user-modal-container">
+				<ul class="cd-switcher">
+					<li><a href="#">Вход</a></li>
+					<li><a href="#">Регистрация</a></li>
+				</ul>
+
+				<div id="cd-login">
+					<!-- форма входа -->
+					<form class="cd-form">
+						<ul class="registration__inputs">
+							<li class="registration__input">
+								<label for="name">Логин</label>
+								<input placeholder="Логин" id="name" type="text">
+							</li>
+							<li class="registration__input">
+								<label for="password">Пароль</label>
+								<input placeholder="Пароль" id="password" type="password">
+							</li>
+						</ul>
+						<button class="registration__button button">
+							Войти
+						</button>
+						<div class="registration__entry">
+							<span>Ещё нет аккаунта?</span><br>
+							<a class="registration__reg-link" href="#">Зарегистрироваться</a>
+						</div>
+					</form>
+				</div>
+
+				<div id="cd-signup">
+					<!-- форма регистрации -->
+					<form class="cd-form">
+						<ul class="registration__inputs">
+							<li class="registration__input">
+								<label for="name">Имя</label>
+								<input placeholder="Имя" id="name" type="text">
+							</li>
+							<li class="registration__input">
+								<label for="number">Номер телефона</label>
+								<input placeholder="+7 (999) 000-00-00" id="number" type="tel">
+							</li>
+							<li class="registration__input">
+								<label for="password">Пароль</label>
+								<input placeholder="Пароль" id="password" type="password">
+							</li>
+						</ul>
+						<div class="registration__checkbox">
+							<input type="checkbox">
+							<label for="">Я согласен с <a href="#">условиями передачи информации</a></label>
+						</div>
+						<button class="registration__button button">
+							Зарегистрироваться
+						</button>
+						<div class="registration__entry">
+							<span>Уже есть аккаунт?</span><br>
+							<a class="registration__entry-reg" href="#">Войти</a>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- ===============================================Регистрация=============================================== /-->
+
+
+		<main class="main">
+			<div class="marketplace">
+				<div class=" container marketplace__container">
+					<div class="marketplace__title title">На маркетплейсе курсов FlowCourse только увлекательный и полезный
+						контект
+					</div>
+					<div class="marketplace__content">
+						<div class="marketplace__wrap">
+							<ul class="marketplace__list">
+
+								<li class="marketplace__item">
+									<div class="marketplace__image">
+										<img src="./images/marketplace/1.png" alt="">
+									</div>
+									<div class="marketplace__sub-text">Все материалы курса в одном месте</div>
+								</li>
+
+								<li class="marketplace__item">
+									<div class="marketplace__image">
+										<img src="./images/marketplace/2.png" alt="">
+									</div>
+									<div class="marketplace__sub-text">Удобный и интуитивно понятный интерфейс</div>
+								</li>
+
+								<li class="marketplace__item">
+									<div class="marketplace__image">
+										<img src="./images/marketplace/3.png" alt="">
+									</div>
+									<div class="marketplace__sub-text">Легко отслеживать свой прогресс в обучении</div>
+								</li>
+
+								<li class="marketplace__item">
+									<div class="marketplace__image">
+										<img src="./images/marketplace/4.png" alt="">
+									</div>
+									<div class="marketplace__sub-text">Курсы любой тематики и на любой возраст</div>
+								</li>
+							</ul>
+
+						</div>
+						<div class="marketplace__block">
+							<div class="marketplace__txt">Регистрируйся, чтобы не пропустить наши акции и быть всегда в курсе
+								новостей
+							</div>
+							<button class="marketplace__link button">Подписаться</button>
+						</div>
+					</div>
+					<div class="marketplace__line">
+						<img src="./images/marketplace/line.png" alt="">
+					</div>
+				</div>
+				<div class="marketplace__blick-1 blick">
+					<img src="./images/marketplace/blick1.svg" alt="not found">
+				</div>
+				<div class="marketplace__blick-2 blick">
+					<img src="./images/marketplace/blick2.svg" alt="not found">
+				</div>
+			</div>
+
+			<div class="onlineCourse">
+				<div class="container onlineCourse__container">
+					<div class="onlineCourse__title title">Выбирайте онлайн курсы по различным направлениям</div>
+					<div class="onlineCourse__subtitle">FlowСourse сделал поиск удобнее. На платформе есть возможность
+						ознакомиться с бесплатными материалами каждого курса, что поможет определиться с выбором преподавателя
+					</div>
+					<div class="onlineCourse__sliders sliders">
+						<div dir="rtl" class="sliders__part1 slider ">
+							<div class="slider__item">Web Design</div>
+							<div class="slider__item">Подготовка к ЕГЭ</div>
+							<div class="slider__item">Психология</div>
+							<div class="slider__item">Программирование</div>
+							<div class="slider__item">Web Design</div>
+							<div class="slider__item">Подготовка к ЕГЭ</div>
+							<div class="slider__item">Психология</div>
+							<div class="slider__item">Программирование</div>
+						</div>
+						<div class="sliders__part2 slider">
+							<div class="slider__item">Web Design</div>
+							<div class="slider__item">Подготовка к ЕГЭ</div>
+							<div class="slider__item">Психология</div>
+							<div class="slider__item">Программирование</div>
+							<div class="slider__item">Web Design</div>
+							<div class="slider__item">Подготовка к ЕГЭ</div>
+							<div class="slider__item">Психология</div>
+							<div class="slider__item">Программирование</div>
+						</div>
+					</div>
+					<div class="onlineCourse__line">
+						<img src="./images/onlineCourse/line.svg" alt="">
+					</div>
+				</div>
+				<div class="onlineCourse__blick blick">
+					<img src="./images/OnlineCourse/blick1.svg" alt="" srcset="">
+				</div>
+			</div>
+
+			<div class="onlineSchool">
+				<div class="container onlineSchool__container">
+					<div class="onlineSchool__wrap">
+						<div class="onlineSchool__content">
+							<div class="onlineSchool__title title"><span>Планируете запустить свою</span> онлайн-школу?</div>
+							<div class="onlineSchool__subtitle">Переходи по ссылке, чтобы узнать подробнее</div>
+							<div class="onlineSchool__button button">Создать онлайн-курс</div>
+						</div>
+						<div class="onlineSchool__img">
+							<img src="./images/OnlineSchool/Hello1.svg" alt="">
+						</div>
+					</div>
+					<div class="onlineSchool__line">
+						<img src="./images/OnlineSchool/line.svg" alt="">
+					</div>
+				</div>
+				<div class="onlineSchool__blick-1 blick">
+					<img src="./images/OnlineSchool/blick1.svg" alt="" srcset="">
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__text">Напишите нам, и мы с удовольствием поможем
+						с выбором обучающего курса, а также ответим на возникшие вопросы </div>
+					<div class="top-footer__content">
+						<div class="top-footer__img-wrap">
+							<div class="top-footer__img"><img src="./images/footer/hero.svg" alt=""></div>
+						</div>
+						<form class="top-footer__form" action="">
+							<div class="top-footer__inputs-top">
+								<input class="top-footer__input-top" placeholder="Имя" type="text">
+								<input class="top-footer__input-top" placeholder="Телефон" type="text">
+							</div>
+							<input type="text" placeholder="Электронная почта" class="top-footer__input-middle">
+							<textarea placeholder="Сообщение" class="top-footer__textarea" name="" id="" cols="30"
+								rows="10"></textarea>
+							<button type="submit" class="top-footer__submit button">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="footer__line"></div>
+
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__title">FlowCourse —</div>
+					<div class="bottom-footer__wrapper">
+						<div class="bottom-footer__info">
+							<div class="bottom-footer__item" data-da="bottom-footer__contacts-wrap,980,last">
+								<div class="bottom-footer__subtitle">образовательная платформа онлайн-курсов на любой возраст.
+									Фитодизайн, бухгалтерский учет или лепка из глины - любые курсы могут разместиться экспертами
+									на
+									платформе.</div>
+								<div class="bottom-footer__text">Подписывайся на нас в социальных сетях</div>
+								<div class="bottom-footer__social">
+									<ul class="bottom-footer__social-signs">
+										<li class="bottom-footer__social-sign"><a href="#"><img
+													src="./images/footer/Foter-bottom social/1.svg" alt=""></a></li>
+										<li class="bottom-footer__social-sign"><a href="#"><img
+													src="./images/footer/Foter-bottom social/2.svg" alt=""></a></a></li>
+										<li class="bottom-footer__social-sign"><a href="#"><img
+													src="./images/footer/Foter-bottom social/3.svg" alt=""></a></a></li>
+										<li class="bottom-footer__social-sign"><a href="#"><img
+													src="./images/footer/Foter-bottom social/4.svg" alt=""></a></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="bottom-footer__item">
+								<div class="bottom-footer__about">О платформе</div>
+								<div class="bottom-footer__list">
+									<li class="bottom-footer__li"><a href="#">Каталог</a></li>
+									<li class="bottom-footer__li"><a href="#">Преподавателям</a></li>
+									<li class="bottom-footer__li"><a href="#">Помощь</a></li>
+									<li class="bottom-footer__li"><a href="#">Блог</a></li>
+									<li class="bottom-footer__li"><a href="#">Услуги</a></li>
+									<li class="bottom-footer__li"><a href="#">Отзывы</a></li>
+								</div>
+							</div>
+						</div>
+						<div class="bottom-footer__contacts-wrap">
+							<div class="bottom-footer__contacts">
+								<div class="bottom-footer__cont"><a href="#">Контакты</a></div>
+								<ul class="bottom-footer__connections">
+									<li class="bottom-footer__connect"><a href="#">+7 (495) 888-88-88</a></li>
+									<li class="bottom-footer__connect"><a href="#">flowcourse@mail.ru</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__blick-1 blick">
+				<img src="./images/footer/blick1.svg" alt="not found" srcset="">
+			</div>
+			<div class="footer__blick-2 blick">
+				<img src="./images/footer/blick2.svg" alt="not found" srcset="">
+			</div>
+		</footer>
+	</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

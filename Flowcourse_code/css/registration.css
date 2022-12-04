@@ -1,0 +1,189 @@
+.registration__wrapper {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+.registration__title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #363131;
+  margin: 0 0 60px 0;
+}
+.registration__input {
+  margin: 0 0 29px 0;
+  text-align: left;
+}
+.registration__input label {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+  display: block;
+}
+.registration__input input {
+  background: #f3f3eb;
+  border: 1px solid #666666;
+  box-shadow: 30px 30px 50px rgba(146, 143, 143, 0.15), inset 30px 30px 30px rgba(200, 197, 197, 0.15);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+}
+.registration__input input:last-child {
+  margin: 0;
+}
+.registration__checkbox {
+  display: flex;
+  align-items: center;
+  margin: 0 0 60px 0;
+  color: #ef6f6f;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  text-align: center;
+  color: #000000;
+}
+.registration__checkbox input {
+  margin: 0 13px 0 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.registration__checkbox a {
+  color: #ef6f6f;
+}
+.registration__button {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  border: 1px solid #000;
+  width: 400px;
+  height: 59px;
+  margin: 0 0 40px 0;
+  background: #202226;
+}
+@media (max-width: 560px) {
+  .registration__button {
+    width: 260px;
+  }
+}
+.registration__entry {
+  flex-grow: 2;
+  font-family: "Inter";
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #363131;
+  display: flex;
+  flex-direction: column;
+}
+.registration__entry a {
+  color: #363131;
+  text-decoration: underline;
+}
+
+.cd-user-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 54, 66, 0.9);
+  z-index: 3;
+  overflow-y: auto;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s 0, visibility 0 0.3s;
+}
+
+.cd-user-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s 0, visibility 0 0;
+}
+
+.cd-user-modal-container {
+  transition-duration: 0.4s;
+  position: relative;
+  top: 10%;
+  padding: 25px 50px;
+  width: 526px;
+  background: #fff;
+  margin: 3em auto 4em;
+  cursor: auto;
+  border-radius: 0.25em;
+  transform: translateY(-30px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  border-radius: 16px;
+}
+@media (max-width: 560px) {
+  .cd-user-modal-container {
+    width: 95%;
+  }
+}
+
+.cd-form {
+  text-align: center;
+}
+
+.cd-user-modal-container .cd-switcher li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-family: "Inter";
+}
+.cd-user-modal-container .cd-switcher li:nth-child(1) a {
+  border-radius: 16px 0 0 16px;
+}
+.cd-user-modal-container .cd-switcher li:nth-child(2) a {
+  border-radius: 0px 16px 16px 0px;
+}
+
+.cd-user-modal-container .cd-switcher a {
+  transition-duration: 0.4s;
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #656565;
+  color: #fff;
+  margin: 0 0 30px 0;
+}
+.cd-user-modal-container .cd-switcher a:hover {
+  color: #202226;
+  background: #ffd583;
+}
+.cd-user-modal-container .cd-switcher a:active {
+  background: #e2b762;
+}
+
+.cd-user-modal-container .cd-switcher a.selected {
+  transition-duration: 0.4s;
+  background: #202226;
+  color: #fff;
+}
+
+#cd-login,
+#cd-signup,
+#cd-reset-password {
+  display: none;
+}
+
+#cd-login.is-selected,
+#cd-signup.is-selected,
+#cd-reset-password.is-selected {
+  display: block;
+}
